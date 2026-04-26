@@ -1,0 +1,3 @@
+C:/PCS/4 semester/ASCIIPaint/build/CMakeFiles/ASCIIPaint.dir
+C:/PCS/4 semester/ASCIIPaint/build/CMakeFiles/edit_cache.dir
+C:/PCS/4 semester/ASCIIPaint/build/CMakeFiles/rebuild_cache.dir

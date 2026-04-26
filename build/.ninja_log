@@ -1,0 +1,6 @@
+# ninja log v6
+58	450	7988684173801379	CMakeFiles/ASCIIPaint.dir/src/Memento.cpp.obj	93590e9ca9a18009
+70	1708	7988684173884018	CMakeFiles/ASCIIPaint.dir/src/main.cpp.obj	d3dfafbec1eafe13
+45	1729	7988684173656901	CMakeFiles/ASCIIPaint.dir/src/InputHandler.cpp.obj	22aef885c1abf2a4
+37	2133	7988684173543906	CMakeFiles/ASCIIPaint.dir/src/Canvas.cpp.obj	879b1279482f4707
+2138	2315	7988684194681166	ASCIIPaint.exe	1246ab1ef37b5de8
