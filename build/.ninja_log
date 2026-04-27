@@ -1,6 +1,11 @@
 # ninja log v6
-58	450	7988684173801379	CMakeFiles/ASCIIPaint.dir/src/Memento.cpp.obj	93590e9ca9a18009
+2138	2315	7988684194681166	ASCIIPaint.exe	1246ab1ef37b5de8
+37	2133	7988684173543906	CMakeFiles/ASCIIPaint.dir/src/Canvas.cpp.obj	879b1279482f4707
 70	1708	7988684173884018	CMakeFiles/ASCIIPaint.dir/src/main.cpp.obj	d3dfafbec1eafe13
 45	1729	7988684173656901	CMakeFiles/ASCIIPaint.dir/src/InputHandler.cpp.obj	22aef885c1abf2a4
-37	2133	7988684173543906	CMakeFiles/ASCIIPaint.dir/src/Canvas.cpp.obj	879b1279482f4707
-2138	2315	7988684194681166	ASCIIPaint.exe	1246ab1ef37b5de8
+58	450	7988684173801379	CMakeFiles/ASCIIPaint.dir/src/Memento.cpp.obj	93590e9ca9a18009
+131	4102	7989924757852165	CMakeFiles/ASCIIPaint.dir/src/Memento.cpp.obj	93590e9ca9a18009
+124	9701	7989924757782136	CMakeFiles/ASCIIPaint.dir/src/InputHandler.cpp.obj	22aef885c1abf2a4
+137	9709	7989924757972194	CMakeFiles/ASCIIPaint.dir/src/main.cpp.obj	d3dfafbec1eafe13
+117	10123	7989924757712161	CMakeFiles/ASCIIPaint.dir/src/Canvas.cpp.obj	879b1279482f4707
+10124	11055	7989924857774665	ASCIIPaint.exe	1246ab1ef37b5de8

@@ -8,13 +8,11 @@
 using namespace std;
 
 Canvas::Canvas(int w, int h) : width(w), height(h), cursorX(0), cursorY(0), currentChar('@') {
-    // Ограничения размеров
     if (width < 40) width = 40;
     if (width > 200) width = 200;
     if (height < 20) height = 20;
     if (height > 100) height = 100;
     
-    // Инициализация холста
     grid = vector<vector<char>>(height, vector<char>(width, '.'));
 }
 
@@ -87,12 +85,11 @@ void Canvas::drawRect(int x1, int y1, int x2, int y2, bool fill, char ch) {
         }
     }
     else {
-        // Верхняя и нижняя границы
         for (int x = x1; x <= x2; x++) {
             setPixel(x, y1, ch);
             setPixel(x, y2, ch);
         }
-        // Левая и правая границы
+
         for (int y = y1; y <= y2; y++) {
             setPixel(x1, y, ch);
             setPixel(x2, y, ch);
@@ -177,15 +174,12 @@ bool Canvas::loadFromFile(const string& filename) {
 void Canvas::render(bool lineModeActive, bool rectModeActive) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     
-    // Очищаем экран
     system("cls");
     
-    // Выводим верхнюю границу
     cout << "=";
     for (int x = 0; x < width + 2; x++) cout << "=";
     cout << "=" << endl;
     
-    // Выводим холст
     for (int y = 0; y < height; y++) {
         cout << "| ";
         for (int x = 0; x < width; x++) {
@@ -201,12 +195,10 @@ void Canvas::render(bool lineModeActive, bool rectModeActive) {
         cout << " |" << endl;
     }
     
-    // Выводим нижнюю границу
     cout << "=";
     for (int x = 0; x < width + 2; x++) cout << "=";
     cout << "=" << endl;
     
-    // Выводим панель управления
     cout << " ===============================================================================" << endl;
     cout << "| Current symbol: [" << currentChar << "]                                       |" << endl;
     
@@ -228,7 +220,6 @@ void Canvas::render(bool lineModeActive, bool rectModeActive) {
     cout << "|   [Arrows] - move cursor     [L] - line mode      [R] - rectangle mode        |" << endl;
     cout << "|   [F] - flood fill           [C] - clear canvas   [U] - undo                  |" << endl;
     cout << "|   [S] - save to file         [O] - load from file [H] - help                  |" << endl;
-    cout << "|   [1-9, any char] - select drawing symbol                                    |" << endl;
     cout << "|   [Q] - exit                                                                |" << endl;
     cout << " ===============================================================================" << endl;
 }

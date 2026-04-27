@@ -57,7 +57,6 @@ void InputHandler::showModeStatus() {
 }
 
 void InputHandler::handleKeyPress(char key) {
-    // Обработка числовых клавиш
     switch (key) {
         case '1': canvas->setCurrentChar('@'); break;
         case '2': canvas->setCurrentChar('#'); break;
@@ -70,7 +69,6 @@ void InputHandler::handleKeyPress(char key) {
         case '9': canvas->setCurrentChar('/'); break;
     }
     
-    // Режим линии
     if (lineMode) {
         if (key == 13) { // Enter
             if (!waitingForSecondPoint) {
@@ -105,7 +103,6 @@ void InputHandler::handleKeyPress(char key) {
         return;
     }
     
-    // Режим прямоугольника
     if (rectMode) {
         if (key == 13) { // Enter
             if (!waitingForSecondPoint) {
@@ -140,7 +137,6 @@ void InputHandler::handleKeyPress(char key) {
         return;
     }
     
-    // Обычные команды
     switch (key) {
         case 'L': case 'l':
             lineMode = true;

@@ -20,4 +20,4 @@ public:
     void handleKeyPress(char key);
 };
 
-#endif // INPUT_HANDLER_H
+#endif 

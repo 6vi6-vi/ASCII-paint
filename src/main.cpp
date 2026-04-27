@@ -11,7 +11,6 @@ int main() {
     
     cout << "==========================================================" << endl;
     cout << "|                     ASCII PAINT                        |" << endl;
-    cout << "|              Pseudographics Editor                     |" << endl;
     cout << "==========================================================" << endl;
     cout << endl;
     cout << "Enter canvas size (from 40x20 to 200x100)" << endl;
@@ -23,7 +22,6 @@ int main() {
     Canvas canvas(width, height);
     InputHandler handler(&canvas);
     
-    // Основной цикл
     while (true) {
         canvas.render();
         

@@ -13,4 +13,4 @@ public:
     std::vector<std::vector<char>> restore() const;
 };
 
-#endif // MEMENTO_H
+#endif 
